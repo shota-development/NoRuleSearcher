@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "NoRuleSearcher",
+  "description": "ポケモンカードのルールを持たないポケモンのみを表示します",
+  "version": "0.1",
+    "content_scripts": [{
+      "matches": ["https://www.pokemon-card.com/card-search/*"],
+      "js": ["remove.js"]
+    }
+  ]
+}
